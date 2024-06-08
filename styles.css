@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    padding: 16px 0;
+    box-shadow: 0 1px 0 0 #ccc;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: #fff;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.logo {
+    display: inline-block;
+    width: 19%;
+    text-align: center;
+    font-size: 36px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #ff8397;
+}
+
+.navbar {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 60%;
+    text-align: center;
+}
+
+.navbar ul li{
+    display: inline-block;
+    padding: 8px;
+    position: relative;
+}
+
+.navbar ul li a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #ff8397;
+    font-weight: 700;
+    position: relative;
+    padding: 6px;
+    text-transform: uppercase;
+}
+
+.navbar ul li a::after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+ul .sub-nav {
+    display: none; 
+    position: absolute;
+    margin-top: 37px;
+    background-color: #fff; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    z-index: 1;
+    border-radius: 5px;
+}
+
+ul li:hover .sub-nav {
+    display: block; 
+}
+
+.sub-nav li {
+    display: block;
+    width: 100%;
+}
+
+.sub-nav li a {
+    font-size: 15px !important;
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+}
+
+.navbar ul li a:hover::after{
+    border-radius: 2px;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #ff8397;
+}
+
+.user {
+    display: inline-block;
+    width: 20%;
+    text-align: right;
+}
+
+.user li{
+    display: inline-block;
+    padding: 8px;
+}
+
+.btn {
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: #ffffff;
+    box-shadow: 1px rgba(0,0,0,0.1);
+    color: #ff8397;
+    border: 1.5px solid #ff8397;
+    transition: all 0.2s ease-in;
+    font-size: 16px !important;
+}
+
+.btn li a {
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #ff8397;
+    color: #ffffff;
+}
+
+.btn:hover {
+    background-color: #ff8397;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #f75671;
+    color: #ffffff;
+}
+
+.carousel img {
+    object-fit: cover;
+    height: 500px;
+    width: 100%;
+    padding: 10px;
+}
+
+.content h1 {
+    text-align: center;
+    font-size: 32px;
+    margin: 28px;
+}
+
+.list-cake {
+    padding-top: 20px;
+}
+
+.list-cake-content ul li{
+    display: inline-block;
+    padding: 12px;
+}
+
+.list-cake-content ul li:hover a {
+    color: #ff8397;
+}
+
+.list-cake-content ul li a{
+   color: #000;
+   font-size: 16px;
+   text-decoration: none;
+   font-weight: 600;
+   transition: all 0.3s ease-in;
+}
+
+
+.cake-item div img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.cake-item {
+    width: 25%;
+    float: left;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.cake-item:hover .cake-item-desc h6{
+    color: #f75671;
+}
+
+.cake-item-desc {
+    padding: 10px;
+}
+
+.cake-item-desc h6 {
+    margin: 8px 0;
+    transition: all 0.3s ease-in;
+}
+
+.cake-item-desc p {
+    color: orange;
+}
+
+footer {
+    padding: 28px 0;
+    text-align: center;
+    background-color: #001a36;
+    clear: both;
+}
+
+footer ul {
+    display: inline-block;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 12px;
+    list-style-type: none;
+}
+
+footer ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15.5px;
+}
+
+.footer-content {
+    clear: right;
+}
+
+.user-content {
+    width: 350px;
+    margin: 9.5% auto 9.5%;
+}
+
+.user-content form label {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.user-content {
+    min-height: 350px;
+}
+
+.user-content h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #f75671;
+    margin-bottom: 20px;
+}
+
+.user-content form input {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.user-content form input:focus {
+    outline: 1px solid #f75671;
+}
+
+.user-content form button {
+    width: 100%;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.user-content p {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.switch {
+    color: #f75671;
+}
+
+.form {
+    width: 500px;
+    margin: 10% auto 8%;
+}
+
+.form-control {
+    margin: 12px 0;
+}
+
+.form-control label {
+    font-weight: 600;
+    color: #f75671;
+}
+
+.form-control input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.form-control textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
